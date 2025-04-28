@@ -1,25 +1,23 @@
-
-document.querySelector(".collapsible").addEventListener("click", function() {
-  this.classList.toggle("active");
-  var content = this.nextElementSibling;
-  if (content.style.display === "block") {
-    content.style.display = "none";
-  } else {
-    content.style.display = "block";
-  }
+// Collapsible functionality
+document.querySelectorAll('.collapsible').forEach(button => {
+  button.addEventListener('click', function() {
+    this.classList.toggle('active');
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 });
 
-function googleLogin() {
-  alert("Google Login not fully implemented here!");
-}
+// Search function
+document.getElementById("search").addEventListener("keyup", function() {
+  let filter = this.value.toUpperCase();
+  let listItems = document.querySelectorAll("#database-list li");
 
-const databaseList = document.querySelectorAll("#database-list li a");
-const search = document.getElementById("search");
-
-search.addEventListener("input", function() {
-  const filter = search.value.toLowerCase();
-  databaseList.forEach(link => {
-    const text = link.textContent.toLowerCase();
-    link.parentElement.style.display = text.includes(filter) ? "" : "none";
+  listItems.forEach(item => {
+    let text = item.textContent || item.innerText;
+    item.style.display = text.toUpperCase().indexOf(filter) > -1 ? "" : "none";
   });
 });
