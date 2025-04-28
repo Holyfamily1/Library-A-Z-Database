@@ -1,0 +1,76 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.login-section, .services-section, .useful-links, .database-section {
+  margin: 2rem;
+}
+
+input[type="text"], input[type="password"] {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  background-color: #008000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.collapsible {
+  background-color: #004080;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+}
+
+.content {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .login-section, .services-section, .useful-links, .database-section {
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Family NMTC Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Holy Family NMTC Library</h1>
+</header>
+
+<section class="login-section">
+  <h2>Login</h2>
+  <form>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+    <button type="button" onclick="googleLogin()">Login with Google</button>
+  </form>
+</section>
+
+<section class="services-section">
+  <h2>Library Services</h2>
+  <table>
+    <tr><th>Service</th><th>Description</th></tr>
+    <tr><td>Book Lending</td><td>Borrow books for a specified period.</td></tr>
+    <tr><td>Research Assistance</td><td>Help with research projects and assignments.</td></tr>
+    <tr><td>Digital Resources</td><td>Access to eBooks, Journals, and Databases.</td></tr>
+  </table>
+</section>
+
+<section class="useful-links">
+  <h2>Useful Links</h2>
+  <ul>
+    <li><a href="https://holyfamilynmtc.edu.gh" target="_blank">Holy Family NMTC Library</a></li>
+  </ul>
+</section>
+
+<section class="database-section">
+  <h2>A-Z Online Databases</h2>
+  <input type="text" id="search" placeholder="Search databases...">
+  <div id="databases">
+    <button class="collapsible">Databases A-Z</button>
+    <div class="content">
+      <ul id="database-list">
+        <li><img src="images/proquest.png" alt="ProQuest" /> <a href="#">ProQuest</a></li>
+        <li><img src="images/pubmed.png" alt="PubMed" /> <a href="#">PubMed</a></li>
+        <li><img src="images/jstor.png" alt="JSTOR" /> <a href="#">JSTOR</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
