@@ -1,35 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #f4f4f9;
+  padding: 20px;
 }
 
 header {
-  background-color: #004080;
-  color: white;
-  padding: 1rem;
   text-align: center;
-}
-
-.login-section, .services-section, .useful-links, .database-section {
-  margin: 2rem;
-}
-
-input[type="text"], input[type="password"] {
-  display: block;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  width: 100%;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
-  background-color: #008000;
+  background-color: #3e8e41;
   color: white;
-  border: none;
-  cursor: pointer;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+section {
+  margin: 20px 0;
 }
 
 table {
@@ -37,40 +35,67 @@ table {
   border-collapse: collapse;
 }
 
-table, th, td {
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
   border: 1px solid #ccc;
 }
 
-th, td {
-  padding: 0.5rem;
-  text-align: left;
-}
-
-.collapsible {
-  background-color: #004080;
+button {
+  background-color: #3e8e41;
   color: white;
-  cursor: pointer;
-  padding: 1rem;
-  width: 100%;
+  padding: 10px 20px;
   border: none;
-  text-align: left;
+  cursor: pointer;
 }
 
-.content {
-  padding: 0 1rem;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+button:hover {
+  background-color: #45a049;
 }
 
-img {
-  width: 20px;
-  vertical-align: middle;
+#databases ul {
+  list-style: none;
+}
+
+#databases li {
+  margin: 10px 0;
+}
+
+#databases a {
+  text-decoration: none;
+  color: #333;
+}
+
+#databases img {
+  width: 30px;
   margin-right: 10px;
 }
 
-@media (max-width: 600px) {
-  .login-section, .services-section, .useful-links, .database-section {
-    margin: 1rem;
-  }
+.collapsible {
+  background-color: #3e8e41;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  padding-left: 20px;
+  display: none;
+}
+
+#search {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
 }
